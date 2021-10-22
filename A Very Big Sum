@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+   long long int size,i,sum= 0;
+    scanf("%lli",&size);
+   long long int arr[size];
+
+     for(i=0; i<size; i++)
+        {
+            scanf("%lli",&arr[i]);
+        }
+     for (i=0; i<size; i++)   {
+         sum += arr[i];
+     }
+     printf("%lli",sum);
+}
