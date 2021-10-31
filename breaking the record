@@ -1,0 +1,33 @@
+
+https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+
+
+#include <stdio.h>
+int main (){
+    
+    int size,min,max,increase=0,deacrese=0;
+    scanf("%d",&size);
+    int arr[size];
+    for(int i=0;i<size;i++)
+    {
+    scanf("%d",&arr[i]);    
+    }
+    min = arr[0];
+    max = arr[0];
+    
+    for(int i=1;i<size;i++)
+    {
+        if(max < arr[i])
+          {
+            max = arr[i];
+            increase++;
+          }
+        if(min > arr[i])
+          {
+            min = arr[i];
+            deacrese++;
+          }
+    }
+    printf("%d %d",increase++,deacrese++);
+    
+}
