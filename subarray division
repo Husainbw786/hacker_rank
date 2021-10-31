@@ -1,0 +1,27 @@
+
+
+
+#include <stdio.h>
+int main(){
+    int size,day,month,sum=0,i,j,p=0;
+    scanf("%d",&size);
+    int s[size];
+    for(i=0;i<size;i++){
+        scanf("%d",&s[i]);
+    }
+    scanf("%d%d",&day,&month);
+    
+    for(i=0;i<=size;i++)
+    {sum = 0;
+        for(j=0;j<month;j++)
+        
+            sum = sum + s[i+j];
+            if(sum == day)
+            p++;
+            
+        
+    }
+    printf("%d",p++);
+    
+    
+}
