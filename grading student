@@ -1,0 +1,32 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,round;
+    scanf("%d",&n);
+    int arr[n];
+  for(i=0;i<n;i++)
+  {
+      scanf("%d",&arr[i]);
+      
+  }
+  for (i=0;i<n;i++)
+  {
+      if(arr[i]<38)
+      {
+          printf("%d\n",arr[i]);
+      }
+      else if((arr[i] % 5) > 2)
+      {
+          round = arr[i] + (5 - (arr[i]%5));
+          printf("%d\n",round);
+      }
+      else 
+      {
+      printf("%d\n",arr[i]);
+      }    
+   }
+  
+}
