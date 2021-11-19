@@ -1,0 +1,25 @@
+
+
+#include <stdio.h>
+int main()
+{
+    long int n,k,b,i,cha=0,actual;
+    scanf("%ld %ld",&n,&k);
+    long int arr[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%ld",&arr[i]);
+        cha = cha+arr[i];    
+    }
+    scanf("%ld",&b);
+    actual = cha-arr[k];
+    actual = actual/2;
+    if(b==actual)
+    {
+        printf("Bon Appetit");
+    }
+    else
+    {
+        printf("%ld",b-actual);
+    }
+}
