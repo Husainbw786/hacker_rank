@@ -1,0 +1,28 @@
+
+
+#include <stdio.h>
+int main(){
+    int spend,i,j,m,n,key[1000],usb[1000],num=-1,result;
+    scanf("%d %d %d",&spend,&m,&n);
+    for(i=0;i<m;i++)
+    {
+        scanf("%d",&key[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&usb[i]);
+    }
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            result = key[i]+usb[j];
+            if(result>num && result <= spend )
+            {
+                num = result;
+            }
+        }
+    }
+    
+    printf("%d",num);
+}
