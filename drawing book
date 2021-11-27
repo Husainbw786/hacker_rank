@@ -1,0 +1,22 @@
+
+
+#include <stdio.h>
+int main()
+{
+    int total_page,page_no,front,back;
+    scanf("%d",&total_page);
+    scanf("%d",&page_no);
+    
+    front = page_no /2;
+    back = total_page/2 - page_no/2;
+    
+    if(front<back)
+    {
+        printf("%d",front);
+    }
+    else 
+    {
+        printf("%d",back);
+    }
+    
+}
