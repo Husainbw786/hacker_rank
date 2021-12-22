@@ -1,0 +1,23 @@
+
+#include <iostream>
+#include <cstdio>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+      long int a;
+     cin >> a;
+    
+     long long int b;
+     cin >> b;
+     char c;
+     cin >> c;
+     float d;
+     cin >> d;
+     double e;
+     cin >> e;
+     cout << a << "\n" << b <<"\n" << c  <<  endl;
+      
+      cout <<  std::setprecision (9) << d <<  "\n"<< std:: setprecision (9) << e  << endl;
+    return 0;
+}
