@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+int main ()
+{
+    int i,j,n,x=0;
+    scanf("%d",&n);
+     int arr[n];
+     for(i=1;i<=n;i++)
+     {
+         scanf("%d",&arr[i]);
+     }
+     for(x=1;x<=n;x++)
+     {
+         for(i=1;i<=n;i++)
+         {
+             if(arr[arr[i]]==x)
+             {
+                 printf("%d\n",i);
+                 break;
+             }
+         }
+     }
+}
