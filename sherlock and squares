@@ -1,0 +1,23 @@
+
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int t,i;
+    scanf("%d",&t);
+    for(int k=1;k<=t;k++)
+    {
+        int a,b;
+        scanf("%d %d",&a,&b);
+        int sq,count=0;
+        for(i=sqrt(a);i<=sqrt(b);i++)
+        {
+            sq = i*i;
+            if(sq >= a && sq <= b )
+            count++;
+            
+        }
+        printf("%d\n",count);
+    }
+} 
