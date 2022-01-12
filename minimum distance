@@ -1,0 +1,44 @@
+
+#include <stdio.h>
+int main()
+{
+    int i,j,n,p=0,k,min=0;
+    scanf("%d",&n);
+     int arr[n];
+     for(i=0;i<n;i++)
+     {
+         scanf("%d",&arr[i]);
+         
+     }
+     for(i=0;i<n;i++)
+     {
+         for(j=i+1;j<n;j++)
+         {
+             if(arr[i]==arr[j])
+             {
+                 k=j-i;
+                 if(p==0)
+                 {
+                     min=k;
+                     p=1;
+                 }
+                 if(min>k)
+                 {
+                     min=k;
+                 }
+             }
+         }
+     }
+     if(min==0)
+     printf("-1");
+     else {
+     {
+         printf("%d",min);
+     }
+     }
+     
+     
+     
+     
+     
+}
