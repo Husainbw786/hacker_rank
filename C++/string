@@ -1,0 +1,39 @@
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string a,b;
+    cin >> a >> b;
+    int len = a.size();
+    int len2 = b.size();
+    int count1 = 0;
+    int count2 = 0;
+    int i;
+    for(i=0;i<len;i++)
+    {
+        count1++;
+    }
+    for(i=0;i<len2;i++)
+    {
+        count2++;
+    }
+    cout << count1 << " " << count2 << endl;
+    
+    string c = "";
+    c = a+b;
+    for(i=0;i<c.length();i++)
+    {
+        cout << c[i]; 
+    }
+    int temp;
+    temp  = a[0];
+    a[0] = b[0];
+    b[0] = temp;
+    cout <<endl << a << " " << b;
+    
+    return 0;
+}
